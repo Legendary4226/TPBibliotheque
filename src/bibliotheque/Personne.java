@@ -17,15 +17,15 @@ public class Personne {
         dernierNumero = tmpDernierNumero++;
     }
 
-    public int getNumeroPers() {
+    public int getNumero() {
         return numeroPers;
     }
 
-    public String getNomPers() {
+    public String getNom() {
         return nomPers;
     }
 
-    public String getPrenomPers() {
+    public String getPrenom() {
         return prenomPers;
     }
 
@@ -37,7 +37,7 @@ public class Personne {
         return dernierNumero;
     }
 
-    public void setNumeroPers(int numeroPers) {
+    public void setNumPers(int numeroPers) {
         this.numeroPers = numeroPers;
     }
 
