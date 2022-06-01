@@ -1,20 +1,18 @@
 package bibliotheque;
 
 public class Personne {
+    private static int DernierNumero = 0;
 
-    private int numeroPers;
+    private int numeroPers = DernierNumero++;
     private String nomPers;
     private String prenomPers;
     private int anNaissance;
-    private final int dernierNumero;
-    private static int tmpDernierNumero = 0;
 
     public Personne(String nom, String prenom, int anneeNaissance) {
+
         nomPers = nom;
         prenomPers = prenom;
         anNaissance = anneeNaissance;
-
-        dernierNumero = tmpDernierNumero++;
     }
 
     public int getNumero() {
@@ -33,8 +31,8 @@ public class Personne {
         return anNaissance;
     }
 
-    public int getDernierNumero() {
-        return dernierNumero;
+    public static int getDernierNumero() {
+        return DernierNumero;
     }
 
     public void setNumPers(int numeroPers) {
@@ -55,6 +53,6 @@ public class Personne {
 
     @Override
     public String toString() {
-        return nomPers + ", " + prenomPers + ", " + anNaissance;
+        return nomPers + ", " + prenomPers + ", " + anNaissance+ ", " + numeroPers;
     }
 }
