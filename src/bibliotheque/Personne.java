@@ -55,6 +55,6 @@ public class Personne {
 
     @Override
     public String toString() {
-        return nomPers + " " + prenomPers + " " + numeroPers;
+        return nomPers + ", " + prenomPers + ", " + anNaissance;
     }
 }

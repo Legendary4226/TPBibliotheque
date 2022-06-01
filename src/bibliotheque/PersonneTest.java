@@ -1,9 +1,6 @@
 package bibliotheque;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
+
 import static org.junit.Assert.*;
 
 public class PersonneTest {
@@ -26,6 +23,7 @@ public class PersonneTest {
     /**
      * Test of getNumero method, of class Personne.
      */
+    @Ignore
     @Test
     public void testGetNumero() {
         fail("Test à implémenter plus tard");
@@ -56,6 +54,7 @@ public class PersonneTest {
     /**
      * Test of getDernierNum method, of class Personne.
      */
+    @Ignore
     @Test
     public void testGetDernierNum() {
         fail("Test à implémenter plus tard");
