@@ -13,7 +13,7 @@ public class Livre {
         this.titre = titre;
         this.nombreDePages = nombreDePages;
         this.auteur = auteur;
-        NumLivre = ++dernierNum;
+        NumLivre = dernierNum++;
     }
 
 
@@ -49,5 +49,7 @@ public class Livre {
         this.auteur = auteur;
     }
 
-
+    public String toString() {
+        return titre + ", " + auteur.getPrenom() + " " + auteur.getNom() + ", " + nombreDePages + "p.";
+    }
 }
