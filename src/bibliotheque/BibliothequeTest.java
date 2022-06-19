@@ -19,11 +19,16 @@ public class BibliothequeTest {
         computing = new Livre("Computing Machinery and Intelligence", 250, alan);
         bibliotheque.ajouterLivre(computing);
     }
-
+    /**
+     * Test de de la recherche selon le titre du livre.
+     */
     @Test
     public void rechercherLivreParTitre(){
         assertEquals(1,bibliotheque.rechercherParTitre("Computing").size());
     }
+    /**
+     * Test de de la recherche selon le nom de l'auteur.
+     */
     @Test
     public void  rechercherLivreParAuteur(){
         assertEquals(1,bibliotheque.rechercherParAuteur(alan).size());
