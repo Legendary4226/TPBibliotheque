@@ -49,5 +49,7 @@ public class Livre {
         this.auteur = auteur;
     }
 
-
+    public String toString() {
+        return titre + ", " + auteur.getPrenom() + " " + auteur.getNom() + ", " + nombreDePages + "p.";
+    }
 }
