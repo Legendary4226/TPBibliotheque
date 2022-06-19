@@ -16,7 +16,7 @@ public class Bibliotheque {
      * @param livre livre à ajouter
      */
     public void ajouterLivre(Livre livre) {
-
+        livres.add(livre);
     }
 
     /**
@@ -25,7 +25,9 @@ public class Bibliotheque {
      * @return liste de livres
      */
     public Collection<Livre> rechercherParAuteur(Personne auteur) {
-        return new ArrayList<>();
+        ArrayList<Livre> match = new ArrayList<>();
+        for(Livre l : livres)if(l.getAuteur().equals(auteur))match.add(l);
+        return match;
     }
 
     /**
@@ -34,13 +36,15 @@ public class Bibliotheque {
      * @return liste de livres
      */
     public Collection<Livre> rechercherParTitre(String titre) {
-        return new ArrayList<>();
+        ArrayList<Livre> match = new ArrayList<>();
+        for(Livre l : livres)if(l.getTitre().contains(titre))match.add(l);
+        return match;
     }
-
-
 
     @Override
     public String toString() {
-        return "";
+        return "Bibliotheque{" +
+                "livres=" + livres +
+                '}';
     }
 }
