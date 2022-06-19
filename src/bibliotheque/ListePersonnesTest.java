@@ -5,6 +5,12 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class ListePersonnesTest {
+
+
+    ListePersonnes liste;
+    Personne alan;
+
+
     public ListePersonnesTest() {
     }
 
@@ -16,6 +22,10 @@ public class ListePersonnesTest {
     }
     @Before
     public void setUp() {
+        liste = new ListePersonnes();
+        alan = new Personne("Turing", "Alan", 1912);
+        liste.ajoutPers(alan);
+
     }
     @After
     public void tearDown() {
@@ -27,18 +37,13 @@ public class ListePersonnesTest {
      */
     @Test
     public void ajoutPers() {
-        ListePersonnes liste = new ListePersonnes();
-        Personne alan = new Personne("Turing", "Alan", 1912);
-        liste.ajoutPers(alan);
+
     }
     /**
      * Test la presence des personnes selon l'objet personne.
      */
     @Test
     public void appartient() {
-        ListePersonnes liste = new ListePersonnes();
-        Personne alan = new Personne("Turing", "Alan", 1912);
-        liste.ajoutPers(alan);
         assertEquals(true, liste.appartient(alan));
     }
     /**
@@ -46,9 +51,6 @@ public class ListePersonnesTest {
      */
     @Test
     public void testAppartient() {
-        ListePersonnes liste = new ListePersonnes();
-        Personne alan = new Personne("Turing", "Alan", 1912);
-        liste.ajoutPers(alan);
         assertEquals(true, liste.appartient(alan.getNom(),alan.getPrenom()));
     }
 }
