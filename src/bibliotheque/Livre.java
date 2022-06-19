@@ -2,7 +2,7 @@ package bibliotheque;
 
 public class Livre {
 
-    private static int dernierNum;
+    private static int dernierNum = 0;
 
     private int NumLivre;
     private String titre;

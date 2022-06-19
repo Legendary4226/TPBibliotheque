@@ -9,7 +9,6 @@ public class Personne {
     private int anNaissance;
 
     public Personne(String nom, String prenom, int anneeNaissance) {
-
         nomPers = nom;
         prenomPers = prenom;
         anNaissance = anneeNaissance;

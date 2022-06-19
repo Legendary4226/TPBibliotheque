@@ -35,6 +35,7 @@ public class ListePersonnes {
         for (Personne personne : personnes) {
             if (personne.getNom().compareTo(nom) == 0 && personne.getPrenom().compareTo(prenom) == 0) {
                 check = true;
+                break;
             }
         }
         return check;
