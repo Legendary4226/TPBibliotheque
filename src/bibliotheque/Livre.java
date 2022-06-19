@@ -18,44 +18,36 @@ public class Livre {
 
 
     public int getNumLivre() {
-        return 0;
+        return NumLivre;
     }
 
     public void setNumLivre(int numLivre) {
-
+        NumLivre = numLivre;
     }
 
     public String getTitre() {
-        return null;
+        return titre;
     }
 
     public void setTitre(String titre) {
-
+        this.titre = titre;
     }
 
     public int getNombreDePages() {
-        return 0;
+        return nombreDePages;
     }
 
     public void setNombreDePages(int nombreDePages) {
-
+        this.nombreDePages = nombreDePages;
     }
 
     public Personne getAuteur() {
-        return null;
+        return auteur;
     }
 
     public void setAuteur(Personne auteur) {
-
+        this.auteur = auteur;
     }
 
-    @Override
-    public String toString() {
-        return "Livre{" +
-                "NumLivre=" + NumLivre +
-                ", titre='" + titre + '\'' +
-                ", nombreDePages=" + nombreDePages +
-                ", auteur=" + auteur +
-                '}';
-    }
+
 }
